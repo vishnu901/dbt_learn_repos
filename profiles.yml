@@ -1,0 +1,52 @@
+airbnb:
+  outputs:
+    dev:
+      account: IONFNHM-DXC35743
+      database: AIRBNB
+      password: Snowflake@9826
+      role: ACCOUNTADMIN
+      schema: DBT_SCHEMA
+      threads: 2
+      type: snowflake
+      user: VISHNU
+      warehouse: COMPUTE_WH
+  target: dev
+dbt_learn_repos:
+  outputs:
+    dev:
+      account: IONFNHM-DXC35743
+      database: RAW
+      password: Snowflake@9826
+      role: ACCOUNTADMIN
+      schema: STAGING
+      threads: 1
+      type: snowflake
+      user: VISHNU
+      warehouse: COMPUTE_WH
+  target: dev
+project_snowflake:
+  outputs:
+    dev:
+      account: IONFNHM-DXC35743
+      database: DEMO_DB
+      password: Snowflake@9826
+      role: ACCOUNTADMIN
+      schema: PUBLIC
+      threads: 4
+      type: snowflake
+      user: VISHNU
+      warehouse: COMPUTE_WH
+  target: dev
+retail_projects:
+  outputs:
+    dev:
+      account: IONFNHM-DXC35743
+      database: RETAIL
+      password: Snowflake@9826
+      role: ACCOUNTADMIN
+      schema: RAW
+      threads: 2
+      type: snowflake
+      user: VISHNU
+      warehouse: COMPUTE_WH
+  target: dev
